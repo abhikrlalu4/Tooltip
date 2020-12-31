@@ -1,0 +1,351 @@
+body {
+  background-color: #c8cac9;
+}
+
+/* Top ------------------- */
+.tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #666;
+  text-align: left;
+}
+
+.tooltip h3 {
+  margin: 12px 0;
+}
+
+.tooltip .top {
+  min-width: 200px;
+  max-width: 400px;
+  top: -20px;
+  left: 50%;
+  transform: translate(-30%, -100%);
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #009cdc;
+  font-weight: normal;
+  font-size: 14px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.tooltip:hover .top {
+  display: block;
+}
+
+.tooltip .top i {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  margin-left: -15px;
+  width: 30px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.tooltip .top i::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #009cdc;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Top end-------------------------- */
+
+.sh {
+  margin-left: 50px;
+
+  margin-top: 200px;
+}
+
+/* Right----------------------------- */
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #666;
+  text-align: left;
+}
+
+.tooltip h3 {
+  margin: 12px 0;
+}
+
+.tooltip .right {
+  min-width: 200px;
+  max-width: 400px;
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  transform: translate(0, -50%);
+  padding: 0;
+  color: #eeeeee;
+  background-color: #444444;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.tooltip:hover .right {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .right img {
+  width: 400px;
+  border-radius: 8px 8px 0 0;
+}
+.tooltip .text-content {
+  padding: 10px 20px;
+}
+
+.tooltip .right i {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+}
+.tooltip .right i::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%) rotate(-45deg);
+  background-color: #444444;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Right end----------------------------- */
+
+/* Bottom-------------------------------- */
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #666;
+  text-align: left;
+}
+
+.tooltip h3 {
+  margin: 12px 0;
+}
+
+.tooltip .bottom {
+  min-width: 200px;
+  /*max-width:400px;*/
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 20px;
+  color: #666666;
+  background-color: #eeeeee;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.tooltip:hover .bottom {
+  display: block;
+}
+
+.tooltip .bottom img {
+  width: 400px;
+}
+
+.tooltip .bottom i {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.tooltip .bottom i::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+  background-color: #eeeeee;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Bottom end -------------------- */
+
+/* Left--------------------------- */
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #666;
+  margin: 200px;
+}
+
+.tooltip h3 {
+  margin: 12px 0;
+}
+
+.tooltip .left {
+  min-width: 200px;
+  max-width: 400px;
+  top: 50%;
+  right: 100%;
+  margin-right: 20px;
+  transform: translate(0, -50%);
+  padding: 20px;
+  color: #666666;
+  background-color: #ffffe0;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  display: none;
+  border: 1px solid #dca;
+}
+
+.tooltip:hover .left {
+  display: block;
+}
+
+.tooltip .left i {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.tooltip .left i::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #ffffe0;
+  border: 1px solid #dca;
+}
+/* Left end-------------------------- */
+
+/* ---button---- */
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: #5e0909;
+} /* Blue */
+.button3 {
+  background-color: #f44336;
+} /* Red */
+.button4 {
+  background-color: #e7e7e7;
+  color: black;
+} /* Gray */
+.button5 {
+  background-color: #555555;
+} /* Black */
+/* ---------- */
+
+/* Drop down */
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 500px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 5px;
+  background-color: whitesmoke;
+}
+
+.dropdown-content li:hover {
+  background-color: #ff9b85;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.dropdown-menu {
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------------ */
+.Text {
+  text-align: center;
+  justify-content: center;
+  font-size: xx-large;
+}
